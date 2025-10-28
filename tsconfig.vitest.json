@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.app.json",
+    "include": ["src/**/__tests__/*", "env.d.ts"],
+    "exclude": [],
+    "compilerOptions": {
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vitest.tsbuildinfo",
+
+        "lib": ["dom"], // dom for global `document` in test files
+        "types": ["node"],
+        "noUncheckedIndexedAccess": false
+    }
+}

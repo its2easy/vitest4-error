@@ -1,0 +1,42 @@
+{
+    "name": "vitest-error",
+    "private": true,
+    "type": "module",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "run-p type-check \"build-only {@}\" --",
+        "preview": "vite preview",
+        "build-only": "vite build",
+        "type-check": "vue-tsc --build",
+        "test": "vitest run",
+        "test:5": "npm test && npm test && npm test && npm test && npm test",
+        "test:10": "npm run test:5 && npm run test:5",
+        "test:50": "npm run test:10 && npm run test:10 && npm run test:10 && npm run test:10 && npm run test:10",
+        "test:100": "npm run test:50 && npm run test:50"
+    },
+    "dependencies": {
+        "es-toolkit": "^1.41.0",
+        "vue": "^3.4.31",
+        "vuetify": "^3.10.7"
+    },
+    "devDependencies": {
+        "@tsconfig/node22": "^22.0.2",
+        "@types/node": "^24.9.1",
+        "@vitejs/plugin-vue": "^6.0.1",
+        "@vue/test-utils": "^2.4.6",
+        "@vue/tsconfig": "^0.8.1",
+        "globals": "^16.4.0",
+        "happy-dom": "^20.0.8",
+        "jiti": "^2.6.1",
+        "npm-run-all2": "^8.0.4",
+        "postcss-html": "^1.8.0",
+        "postcss-scss": "^4.0.9",
+        "sass-embedded": "^1.93.2",
+        "typescript": "^5.9.3",
+        "vite": "^7.1.12",
+        "vite-plugin-vuetify": "^2.1.2",
+        "vitest": "^4.0.4",
+        "vue-tsc": "^3.1.2"
+    }
+}
